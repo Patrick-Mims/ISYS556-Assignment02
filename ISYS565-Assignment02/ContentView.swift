@@ -2,6 +2,7 @@
  Name: Patrick Mims
  Date: 10.05.22
  ISYS556-Assignment02
+ Assignment: Mad Libs
  */
 
 import SwiftUI
@@ -22,6 +23,12 @@ struct ContentView: View {
                 SecureField("Your Password: ", text: $password).padding()
             }.padding()
             Divider()
+            VStack {
+                Text("Information Entered: ")
+                    .frame(maxWidth: .infinity, alignment: .leading).padding()
+                Text("User Name: \(userName), Password: \(password)")
+                    .frame(maxWidth: .infinity, alignment: .leading).padding()
+            }
         }
     }
 }
